@@ -1,10 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" href="background_styles.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Responsive Navbar</title>
   </head>
-  <body></body>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="brand-title">UniverseGo</div>
+        <a href="#" class="toggle-button">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </a>
+        <div class="navbar-links">
+          <ul id="links">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Mision</a></li>
+            <li><a href="#">Book</a></li>
+            <li><a href="#">Contact</a></li>
+            <li>
+              <a href="#" class="login-btn" onclick="toggleModal()"
+                >Sign in / Sign up</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <div class="popup">
+      <div class="close-btn">&#10006</div>
+      <div class="form">
+      
+        <div class="form-element">
+          <label for="email">Email</label><br>
+          <input type="email" id="email" placeholder="Enter email"><br>
+        </div>
+
+        <div class="form-element">
+          <label for="password">Password</label><br>
+          <input type="password" id="password" placeholder="Enter password"><br>
+        </div>
+
+        <div class="form-element">
+          <button type="submit">Sign in</button>
+        </div>
+      </div>
+    </div>
+
+      
+    </div>
+
+    <script src="index.js"></script>
+  </body>
 </html>
+
