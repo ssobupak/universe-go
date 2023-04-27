@@ -1,4 +1,6 @@
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
@@ -92,6 +94,15 @@ body {
   width: 50%;
   height: 100%;
   background-color: green;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-img img {
+  padding: 10px;
+  width: 80%;
+  height: 80%;
 }
 
 .viajes-populares {
