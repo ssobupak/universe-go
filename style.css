@@ -1,3 +1,5 @@
+@import url("https://fonts.cdnfonts.com/css/do-futuristic");
+
 * {
   margin: 0;
   padding: 0;
@@ -5,8 +7,8 @@
 }
 
 body {
-  margin: 0;
-  padding: 0;
+  font-family: "DO Futuristic", sans-serif;
+  letter-spacing: 3px;
   background: url(assets/imgs/background2.jpg);
   background-position: center center;
   background-repeat: no-repeat;
@@ -132,6 +134,11 @@ body {
   text-align: center;
 }
 
+.hero-img img {
+  padding: 10px;
+  width: 50%;
+}
+
 /* RESERVAR VUELO */
 .reservar {
   width: 100%;
@@ -172,6 +179,7 @@ input::placeholder {
 /* POPULAR DESTINATIONS */
 .viajes-populares {
   order: 3;
+  background-color: green;
 }
 
 .viajes-populares h2 {
@@ -189,11 +197,14 @@ input::placeholder {
 }
 
 .card img {
-  width: 100%;
+  width: 80%;
   height: 200px;
 }
 
 .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin: 30px 0;
 }
 
@@ -206,4 +217,19 @@ input::placeholder {
   padding: 10px;
   border-radius: 10px;
   margin-top: 5px;
+}
+
+@media (min-width: 768px) {
+  .viajes-populares {
+    order: 3;
+    width: 100%;
+  }
+
+  .card img {
+    width: 80%;
+  }
+  .card-wrapper {
+    justify-content: space-evenly;
+    flex-direction: row;
+  }
 }
