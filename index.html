@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <!-- <link rel="stylesheet" href="CSSborrador.css" /> -->
     <title>UniverseGo</title>
   </head>
   <body>
@@ -19,7 +20,7 @@
         <div class="navbar-links">
           <ul id="links">
             <li><a href="#">About</a></li>
-            <li><a href="#">Mision</a></li>
+            <li><a href="#">Mission</a></li>
             <li><a href="#">Book</a></li>
             <li><a href="#">Contact</a></li>
             <li>
@@ -34,11 +35,77 @@
 
     <main>
       <div class="hero">
-        <div class="reservar"></div>
+        <!-- RESERVAR VUELOS -->
+        <div class="reservar">
+          <div class="form-reservar">
+            <h2>Book your next flight</h2>
+            <div class="form-element-reservar">
+              <label for="from">From</label><br />
+              <input type="text" id="from" placeholder="Barcelona" />
+            </div>
+
+            <div class="form-element-reservar">
+              <label for="to">To</label><br />
+              <input type="text" id="to" placeholder="Mars" />
+            </div>
+
+            <div class="form-element-reservar">
+              <label for="check-in">Check in</label><br />
+              <input type="date" id="check-in" />
+            </div>
+
+            <div class="form-element-reservar">
+              <label for="check-out">Check out</label><br />
+              <input type="date" id="check-out" />
+            </div>
+
+            <div class="form-element-reservar">
+              <button type="submit">Reserve</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- IMAGEN HERO -->
         <div class="hero-img">
           <img src="http://placekitten.com/g/200/300" />
         </div>
-        <div class="viajes-populares"></div>
+
+        <!-- VIAJES POPULARES -->
+        <div class="viajes-populares">
+          <div class="titulo-viajes-populares">
+            <h2>Popular destinations</h2>
+          </div>
+
+          <div class="card-wrapper">
+            <div class="card">
+              <img src="assets/imgs/jupiter.jpg" alt="jupiter" />
+              <div class="card-planet-info">
+                <h3>Jupiter</h3>
+                <p>⭐⭐⭐⭐⭐</p>
+                <p>📅 Dates available</p>
+                <p>💲 Starts from €5.000</p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="assets/imgs/mars.png" alt="mars" />
+              <div class="card-planet-info">
+                <h3>Mars</h3>
+                <p>⭐⭐⭐⭐⭐</p>
+                <p>📅 Dates available</p>
+                <p>💲 Starts from €5.000</p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="assets/imgs/neptune.jpg" alt="neptune" />
+              <div class="card-planet-info">
+                <h3>Neptune</h3>
+                <p>⭐⭐⭐⭐⭐</p>
+                <p>📅 Dates available</p>
+                <p>💲 Starts from €5.000</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </main>
 
