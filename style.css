@@ -256,7 +256,6 @@ input::placeholder {
     order: 1;
     height: 100%;
     width: 20%;
-    /* width: 25%; */
   }
 
   .form-reservar {
@@ -283,11 +282,37 @@ input::placeholder {
   }
 
   .card-wrapper {
+    margin-top: -30px;
     flex-direction: column;
+    height: 100%;
+  }
+
+  .card {
+    padding: 0;
+    margin: 0;
   }
 
   .card img {
-    width: 55%;
+    margin-bottom: 5px;
+    width: 150px;
+    height: 150px;
+  }
+
+  .card-planet-info {
+    margin: 0;
+    padding: 10px;
+    height: auto;
+  }
+
+  .card-planet-info h3,
+  .card-planet-info span,
+  .card-planet-info p {
+    font-size: 1rem;
+  }
+
+  .planet-info-element {
+    margin: 0;
+    padding: 0;
   }
 }
 
