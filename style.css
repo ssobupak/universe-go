@@ -94,7 +94,7 @@ body {
 .hero-img {
   order: 1;
   height: 60vh;
-  background-color: blue;
+  /* background-color: blue; */
   width: 100%;
   display: flex;
   justify-content: center;
@@ -112,7 +112,8 @@ body {
   order: 2;
   height: auto;
   text-align: center;
-  background-color: red;
+
+  /* background-color: red; */
 }
 
 input::placeholder {
@@ -147,7 +148,7 @@ input::placeholder {
 .viajes-populares {
   width: 100%;
   order: 3;
-  background-color: green;
+  /* background-color: green; */
 }
 
 .viajes-populares h2 {
@@ -272,6 +273,11 @@ input::placeholder {
     order: 2;
     height: 100%;
     width: 60%;
+  }
+
+  .hero-img img {
+    width: 80%;
+    height: 100%;
   }
 
   /* VIAJES POPULARES */
