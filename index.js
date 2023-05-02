@@ -16,3 +16,15 @@ openModal.addEventListener("click", () => {
 closeModal.addEventListener("click", () => {
   modal.close();
 });
+
+const modalContact = document.querySelector("#modal-contact");
+const openModalContact = document.querySelector(".open-modal-contact");
+const closeModalContact = document.querySelector(".close-modal-contact");
+
+openModalContact.addEventListener("click", () => {
+  modalContact.showModal();
+});
+
+closeModalContact.addEventListener("click", () => {
+  modalContact.close();
+});

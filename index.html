@@ -25,7 +25,7 @@
           <ul id="links">
             <li><a href="#about">About</a></li>
             <li><a href="#mission">Mission</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#" class="open-modal-contact">Contact</a></li>
             <li>
               <a href="#" class="login-btn open-modal">Sign in / Sign up</a>
             </li>
@@ -196,15 +196,73 @@
 
     <dialog class="modal" id="modal">
       <div class="modal-header">
-        <h2>Sign in</h2>
-        <p class="close-modal">&times;</p>
+        <div class="modal-header-title">
+          <h2>Sign in</h2>
+        </div>
+        <div class="modal-header-close-btn">
+          <p class="close-modal">&times;</p>
+        </div>
       </div>
       <form method="dialog">
         <label for="email">Email</label><br />
-        <input type="email" name="email" /><br />
+        <input
+          type="email"
+          name="email"
+          placeholder="email@space.go"
+          required
+        /><br />
         <label for="password">Password</label><br />
-        <input type="password" name="password" /><br />
+        <input
+          type="password"
+          name="password"
+          placeholder="Enter password"
+          required
+        /><br />
         <button type="submit">Sign in</button>
+      </form>
+    </dialog>
+
+    <dialog class="modal modal-contact" id="modal-contact">
+      <div class="modal-header">
+        <div class="modal-header-title">
+          <h2>Contact</h2>
+        </div>
+        <div class="modal-header-close-btn">
+          <p class="close-modal-contact">&times;</p>
+        </div>
+      </div>
+      <form
+        action="mailto:spacego@gmail.com"
+        method="dialog"
+        enctype="text/plain"
+      >
+        <label>Name</label><br />
+        <input
+          type="text"
+          name="name"
+          value=""
+          required
+          placeholder="John Doe"
+        /><br />
+        <label>Email</label><br />
+        <input
+          type="email"
+          name="email"
+          required
+          placeholder="email@space.go"
+        /><br />
+        <label for="subject">Subject</label><br />
+        <input type="text" required placeholder="Prices" /><br />
+        <label>Message</label><br />
+        <textarea
+          name="your message"
+          rows="8"
+          cols="30"
+          required
+          placeholder="Write your message here"
+        ></textarea
+        ><br />
+        <button type="submit">Submit</button>
       </form>
     </dialog>
 

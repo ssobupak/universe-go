@@ -154,7 +154,6 @@ input::placeholder {
 
 .form-element-reservar {
   margin: 0.65rem;
-  /* background-color: #555; */
 }
 
 .form-element-reservar input {
@@ -177,7 +176,6 @@ input::placeholder {
 .viajes-populares {
   width: 100%;
   order: 3;
-  /* background-color: green; */
 }
 
 .viajes-populares h2 {
@@ -307,17 +305,22 @@ footer li:hover {
   padding-bottom: 10px;
 }
 
-/* LOGIN MODAL */
+/* LOGIN / CONTACT MODAL */
 
 .modal-header {
   display: flex;
-  justify-content: space-between;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
+  justify-content: center;
+  position: relative;
 }
-.modal-header p {
-  cursor: pointer;
+
+.modal-header-close-btn {
+  position: absolute;
+  right: 0;
   font-size: 1.5rem;
+  cursor: pointer;
 }
+
 .modal {
   top: 50%;
   left: 50%;
@@ -328,14 +331,20 @@ footer li:hover {
   color: white;
   padding: 15px 25px;
   border-radius: 10px;
+  text-align: center;
 }
 
 .modal form input {
   margin: 10px 0;
+  padding: 5px 0;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  text-align: center;
 }
 
 .modal form button {
-  padding: 5px;
+  padding: 10px 15px;
   border-radius: 5px;
   border: none;
   cursor: pointer;
@@ -344,6 +353,13 @@ footer li:hover {
 .modal::backdrop {
   background-color: #555;
   opacity: 0.3;
+}
+
+textarea {
+  border: none;
+  outline: none;
+  padding: 5px;
+  margin: 5px;
 }
 
 @media (min-width: 768px) {
