@@ -13,9 +13,9 @@
     <title>UniverseGo</title>
   </head>
   <body>
-    <header>
+    <header id="home">
       <nav class="navbar">
-        <div class="brand-title">UniverseGo</div>
+        <div class="brand-title">SpaceGo</div>
         <a href="#" class="toggle-button">
           <span class="bar"></span>
           <span class="bar"></span>
@@ -23,8 +23,8 @@
         </a>
         <div class="navbar-links">
           <ul id="links">
-            <li><a href="">About</a></li>
-            <li><a href="">Mission</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#mission">Mission</a></li>
             <li><a href="">Contact</a></li>
             <li>
               <a href="" class="login-btn" onclick="toggleModal()"
@@ -135,7 +135,7 @@
 
       <section class="about-mission">
         <article class="about">
-          <div class="about-element">
+          <div class="about-element" id="about">
             <h2>About us</h2>
           </div>
           <div class="about-element">
@@ -155,7 +155,7 @@
         <div class="saturn">
           <img src="assets/imgs/saturn.png" alt="saturn" />
         </div>
-        <article class="mission">
+        <article class="mission" id="mission">
           <div class="mission-element">
             <h2>Our mission</h2>
           </div>
@@ -173,19 +173,28 @@
         </article>
       </section>
 
-      <!-- <footer>
-        <div class="footer-left">
-          <img src="assets/imgs/logo.png" alt="logo" />
-          <p>
-            Excepteur pariatur esse sint aute minim sit et dolor ut aliqua
-            voluptate tempor incididunt aliqua.
-          </p>
-          <div class="socials"><i class="fa fa-facebook"></i></div>
-          <div class="socials"><i class="fa fa-twitter"></i></div>
-          <div class="socials"><i class="fa fa-youtube"></i></div>
-          <div class="socials"><i class="fa fa-linkedin"></i></div>
+      <footer>
+        <!-- <img src="assets/imgs/logo.png" alt="logo" /> -->
+        <h2>SpaceGo</h2>
+        <div class="footer-nav">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="">Contact</a></li>
+            <li><a href="">Our team</a></li>
+          </ul>
         </div>
-      </footer> -->
+
+        <div class="footer-socials">
+          <a href=""><i class="fa fa-facebook"></i></a>
+          <a href=""><i class="fa fa-twitter"></i></a>
+          <a href=""><i class="fa fa-youtube"></i></a>
+          <a href=""><i class="fa fa-linkedin"></i></a>
+        </div>
+
+        <div class="copyright">
+          <p>Copyright &copy;2023 SpaceGo</p>
+        </div>
+      </footer>
     </main>
 
     <!-- <div class="popup">
