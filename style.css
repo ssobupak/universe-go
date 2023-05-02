@@ -99,6 +99,20 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+}
+
+.slogan {
+  text-align: center;
+  position: absolute;
+}
+
+.upper {
+  top: 15%;
+}
+
+.lower {
+  bottom: 10%;
 }
 
 .hero-img img {
@@ -112,8 +126,15 @@ body {
   order: 2;
   height: auto;
   text-align: center;
+  display: flex;
+  justify-content: center;
+}
 
-  /* background-color: red; */
+.form-wrapper {
+  margin: auto;
+  padding: 0 15px;
+  border-radius: 10px;
+  background-color: rgba(35, 35, 35, 0.8);
 }
 
 input::placeholder {
@@ -126,6 +147,7 @@ input::placeholder {
 
 .form-element-reservar {
   margin: 0.65rem;
+  /* background-color: #555; */
 }
 
 .form-element-reservar input {
@@ -206,6 +228,42 @@ input::placeholder {
   padding: 5px 0;
 }
 
+.about-mission {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.about,
+.mission {
+  margin: 0 20px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: rgba(35, 35, 35, 0.8);
+}
+
+.about h2,
+.mission h2 {
+  text-align: center;
+  margin: 10px 0;
+}
+
+.saturn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.saturn img {
+  width: 75%;
+}
+
+footer {
+  margin-top: 30px;
+  background-color: rgba(35, 35, 35, 0.8);
+}
+
 @media (min-width: 768px) {
   /* VIAJES POPULARES */
   .viajes-populares {
@@ -220,6 +278,10 @@ input::placeholder {
     justify-content: space-evenly;
     flex-direction: row;
   }
+
+  .saturn img {
+    width: 50%;
+  }
 }
 
 @media (min-width: 1000px) {
@@ -231,9 +293,39 @@ input::placeholder {
     height: 15vh;
   }
 
+  /* HERO IMAGEN */
   .hero-img img {
     width: 450px;
     height: 450px;
+  }
+
+  .slogan {
+    font-size: 1.5rem;
+  }
+
+  .upper {
+    top: 12%;
+  }
+
+  .lower {
+    bottom: 8%;
+  }
+
+  /* ABOUT / MISSION */
+  .about-mission {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .about,
+  .mission {
+    width: 500px;
+    text-align: justify;
+  }
+
+  .saturn img {
+    width: 100%;
+    height: 200px;
   }
 }
 
@@ -257,6 +349,8 @@ input::placeholder {
     order: 1;
     height: 100%;
     width: 20%;
+    display: flex;
+    justify-content: center;
   }
 
   .form-reservar {
@@ -278,6 +372,18 @@ input::placeholder {
   .hero-img img {
     width: 80%;
     height: 100%;
+  }
+
+  .slogan {
+    font-size: 2rem;
+  }
+
+  .upper {
+    top: 10%;
+  }
+
+  .lower {
+    bottom: 8%;
   }
 
   /* VIAJES POPULARES */
@@ -320,6 +426,8 @@ input::placeholder {
     margin: 0;
     padding: 0;
   }
+
+  /* FOOTER */
 }
 
 @media (max-width: 1000px) {

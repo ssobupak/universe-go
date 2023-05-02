@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+    />
     <!-- <link rel="stylesheet" href="CSSborrador.css" /> -->
     <title>UniverseGo</title>
   </head>
@@ -36,37 +40,41 @@
       <div class="hero">
         <!-- RESERVAR VUELOS -->
         <div class="reservar">
-          <div class="form-reservar">
-            <h2>Book your next flight</h2>
-            <div class="form-element-reservar">
-              <label for="from">From</label><br />
-              <input type="text" id="from" placeholder="Barcelona" />
-            </div>
-
-            <div class="form-element-reservar">
-              <label for="to">To</label><br />
-              <input type="text" id="to" placeholder="Mars" />
-            </div>
-
-            <div class="form-element-reservar">
-              <label for="check-in">Check in</label><br />
-              <input type="date" id="check-in" />
-            </div>
-
-            <div class="form-element-reservar">
-              <label for="check-out">Check out</label><br />
-              <input type="date" id="check-out" />
-            </div>
-
-            <div class="form-element-reservar">
-              <button type="submit">Reserve</button>
+          <div class="form-wrapper">
+            <div class="form-reservar">
+              <h2>Book your next trip</h2>
+              <div class="form-element-reservar">
+                <label for="from">From</label><br />
+                <input type="text" id="from" placeholder="Barcelona" />
+              </div>
+              <div class="form-element-reservar">
+                <label for="to">To</label><br />
+                <input type="text" id="to" placeholder="Mars" />
+              </div>
+              <div class="form-element-reservar">
+                <label for="check-in">Check in</label><br />
+                <input type="date" id="check-in" />
+              </div>
+              <div class="form-element-reservar">
+                <label for="check-out">Check out</label><br />
+                <input type="date" id="check-out" />
+              </div>
+              <div class="form-element-reservar">
+                <button type="submit">Reserve</button>
+              </div>
             </div>
           </div>
         </div>
 
         <!-- IMAGEN HERO -->
         <div class="hero-img">
-          <img src="assets/imgs/hero5.png">
+          <div class="slogan upper">
+            <h1>The ultimate Cosmic Journey</h1>
+          </div>
+          <img src="assets/imgs/hero5.png" />
+          <div class="slogan lower">
+            <h1>one click away.</h1>
+          </div>
         </div>
 
         <!-- VIAJES POPULARES -->
@@ -81,7 +89,7 @@
               <div class="card-planet-info">
                 <h3>Jupiter</h3>
                 <div class="planet-info-element">
-                  <span>&#9733&#9733&#9733&#9733&#9733</span>
+                  <span>&#9733;&#9733;&#9733;&#9733;&#9733;</span>
                 </div>
                 <div class="planet-info-element">
                   <p>📅 Dates available</p>
@@ -96,7 +104,8 @@
               <div class="card-planet-info">
                 <h3>Mars</h3>
                 <div class="planet-info-element">
-                  <span>&#9733&#9733&#9733&#9733&#9733</span></div>
+                  <span>&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                </div>
                 <div class="planet-info-element">
                   <p>📅 Dates available</p>
                 </div>
@@ -110,7 +119,8 @@
               <div class="card-planet-info">
                 <h3>Neptune</h3>
                 <div class="planet-info-element">
-                  <span>&#9733&#9733&#9733&#9733&#9733</span></div>
+                  <span>&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                </div>
                 <div class="planet-info-element">
                   <p>📅 Dates available</p>
                 </div>
@@ -122,6 +132,60 @@
           </div>
         </div>
       </div>
+
+      <section class="about-mission">
+        <article class="about">
+          <div class="about-element">
+            <h2>About us</h2>
+          </div>
+          <div class="about-element">
+            <p>
+              We are the Universe Go team and we have carried out this project
+              for Wider World where our website offers a unique experience in
+              interplanetary travel. We are dedicated to providing a unique
+              opportunity for those who dream of exploring other planets in our
+              solar system. On our website, visitors will be able to find
+              detailed information about our destinations, select and book their
+              trip, and connect with other dreamy travelers. In addition, we
+              offer customized travel packages and a variety of itinerary
+              options to meet the needs of each and every one of our clients.
+            </p>
+          </div>
+        </article>
+        <div class="saturn">
+          <img src="assets/imgs/saturn.png" alt="saturn" />
+        </div>
+        <article class="mission">
+          <div class="mission-element">
+            <h2>Our mission</h2>
+          </div>
+          <div class="mission-element">
+            <p>
+              Our mission are the following: To become the leading online
+              platform for interplanetary travel. Providing cutting-edge
+              technology, unparalleled security, and exceptional customer
+              service. Offer a unique experience for those looking to explore
+              the far reaches of our solar system. Advance in the exploration
+              and colonization of other planets. Start in a new era in human
+              exploration.
+            </p>
+          </div>
+        </article>
+      </section>
+
+      <!-- <footer>
+        <div class="footer-left">
+          <img src="assets/imgs/logo.png" alt="logo" />
+          <p>
+            Excepteur pariatur esse sint aute minim sit et dolor ut aliqua
+            voluptate tempor incididunt aliqua.
+          </p>
+          <div class="socials"><i class="fa fa-facebook"></i></div>
+          <div class="socials"><i class="fa fa-twitter"></i></div>
+          <div class="socials"><i class="fa fa-youtube"></i></div>
+          <div class="socials"><i class="fa fa-linkedin"></i></div>
+        </div>
+      </footer> -->
     </main>
 
     <!-- <div class="popup">
