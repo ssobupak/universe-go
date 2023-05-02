@@ -32,8 +32,9 @@ body {
   color: white;
   margin: 10px 0;
 }
-/* estrellas */
-.spanstar { 
+
+/* ANIMACION ESTRELLAS */
+.spanstar {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -41,32 +42,33 @@ body {
   height: 4px;
   background: white;
   border-radius: 50%;
-  box-shadow: 0 0 0 4px rgba(255,255,255,0.1), 0 0 0 8px rgba(255,255,255,0.1), 0 0 20px rgba(255,255,255,1);
+  box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.1),
+    0 0 0 8px rgba(255, 255, 255, 0.1), 0 0 20px rgba(255, 255, 255, 1);
   animation: animate 3s linear infinite;
 }
 
 .spanstar::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   width: 300px;
   height: 1px;
   background: linear-gradient(90deg, #fff, transparent);
-  }
+}
 
-  @keyframes animate {
-    0% {
-        transform: rotate(315deg) translateX(0);
-        opacity: 1;
-    }
-    70% {
-        opacity: 1;
-    }
-    100% {
-        transform: rotate(315deg) translateX(-1000px);
-        opacity: 0;
-    }
+@keyframes animate {
+  0% {
+    transform: rotate(315deg) translateX(0);
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(315deg) translateX(-1000px);
+    opacity: 0;
+  }
 }
 
 .spanstar:nth-child(1) {
@@ -205,8 +207,6 @@ body {
   border-radius: 10px;
 }
 
-/* LANDING PAGE */
-
 /* HERO IMAGEN */
 .hero {
   display: flex;
@@ -218,7 +218,6 @@ body {
 .hero-img {
   order: 1;
   height: 60vh;
-  /* background-color: blue; */
   width: 100%;
   display: flex;
   justify-content: center;
@@ -424,7 +423,6 @@ footer li:hover {
 }
 
 /* LOGIN / CONTACT MODAL */
-
 .modal-header {
   display: flex;
   margin-bottom: 20px;
@@ -478,6 +476,20 @@ textarea {
   outline: none;
   padding: 5px;
   margin: 5px;
+}
+
+/* ANIMACION ABRIR MODAL */
+dialog[open] {
+  animation: fadeIn 1s ease normal;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @media (min-width: 768px) {
