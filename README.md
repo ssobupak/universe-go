@@ -13,7 +13,7 @@ SpaceGo es un proyecto en desarrollo de la agencia de viajes Wider World. La mis
 
 Aquí se encuentran algunas imágenes de los mockups:
 
-[Inserte las imágenes aquí]
+![spacego](https://user-images.githubusercontent.com/87943346/235790089-b4956094-0b62-4bcc-8425-834d948b12eb.jpg)
 
 
 **Tecnologías utilizadas en el desarrollo**:
@@ -39,3 +39,4 @@ https://www.canva.com/design/DAFhrsOGE1Y/inAa4UaLnRoo7ONJnvvaZg/edit?analyticsCo
 
 **URL de tablero Kanban**:
 https://trello.com/b/baL0xlrg/kanban-template
+
