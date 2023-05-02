@@ -32,6 +32,10 @@ _Características a desarrollar:_
 - Generar sinergias con instituciones educativas, escuelas y universidades de ciencias, museos de ciencias para escalar los beneficios educativos de SpaceGo para las próximas generaciones.
 
 **URL de la aplicación desplegada**:
+https://spacegotravel.netlify.app/
 
-
+**URL de la presentación del proyecto**:
 https://www.canva.com/design/DAFhrsOGE1Y/inAa4UaLnRoo7ONJnvvaZg/edit?analyticsCorrelationId=481c01a8-35d3-4663-8619-c9a6510d0f12
+
+**URL de tablero Kanban**:
+https://trello.com/b/baL0xlrg/kanban-template
