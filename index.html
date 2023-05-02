@@ -9,7 +9,6 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
     />
-    <!-- <link rel="stylesheet" href="CSSborrador.css" /> -->
     <title>SpaceGo</title>
   </head>
   <body>
@@ -81,7 +80,7 @@
           <div class="slogan upper">
             <h1>The ultimate Cosmic Journey</h1>
           </div>
-          <img src="assets/imgs/hero5.png" />
+          <img src="assets/imgs/hero5.png" alt="imagen-hero" />
           <div class="slogan lower">
             <h1>one click away.</h1>
           </div>
@@ -162,9 +161,11 @@
             </p>
           </div>
         </article>
+
         <div class="saturn">
           <img src="assets/imgs/saturn.png" alt="saturn" />
         </div>
+
         <article class="mission" id="mission">
           <div class="mission-element">
             <h2>Our mission</h2>
@@ -220,7 +221,8 @@
         <label for="email">Email</label><br />
         <input
           type="email"
-          name="email"
+          name="id"
+          id="email"
           placeholder="email@space.go"
           required
         /><br />
@@ -228,6 +230,7 @@
         <input
           type="password"
           name="password"
+          id="password"
           placeholder="Enter password"
           required
         /><br />
@@ -264,11 +267,11 @@
           required
           placeholder="email@space.go"
         /><br />
-        <label for="subject">Subject</label><br />
+        <label>Subject</label><br />
         <input type="text" required placeholder="Prices" /><br />
         <label>Message</label><br />
         <textarea
-          name="your message"
+          name="message"
           rows="8"
           cols="30"
           required
