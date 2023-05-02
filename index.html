@@ -25,11 +25,9 @@
           <ul id="links">
             <li><a href="#about">About</a></li>
             <li><a href="#mission">Mission</a></li>
-            <li><a href="#" onclick="toggleBlur()">Contact</a></li>
+            <li><a href="#">Contact</a></li>
             <li>
-              <a href="" class="login-btn" onclick="toggleModal()"
-                >Sign in / Sign up</a
-              >
+              <a href="#" class="login-btn open-modal">Sign in / Sign up</a>
             </li>
           </ul>
         </div>
@@ -95,7 +93,7 @@
                   <p>📅 Dates available</p>
                 </div>
                 <div class="planet-info-element">
-                  <p><span>&#8364</span> Starts from €48.000</p>
+                  <p><span>&#8364;</span> Starts from €48.000</p>
                 </div>
               </div>
             </div>
@@ -110,7 +108,7 @@
                   <p>📅 Dates available</p>
                 </div>
                 <div class="planet-info-element">
-                  <p><span>&#8364</span> Starts from €25.000</p>
+                  <p><span>&#8364;</span> Starts from €25.000</p>
                 </div>
               </div>
             </div>
@@ -125,7 +123,7 @@
                   <p>📅 Dates available</p>
                 </div>
                 <div class="planet-info-element">
-                  <p><span>&#8364</span> Starts from €76.000</p>
+                  <p><span>&#8364;</span> Starts from €76.000</p>
                 </div>
               </div>
             </div>
@@ -195,6 +193,20 @@
         </div>
       </footer>
     </main>
+
+    <dialog class="modal" id="modal">
+      <div class="modal-header">
+        <h2>Sign in</h2>
+        <p class="close-modal">&times;</p>
+      </div>
+      <form method="dialog">
+        <label for="email">Email</label><br />
+        <input type="email" name="email" /><br />
+        <label for="password">Password</label><br />
+        <input type="password" name="password" /><br />
+        <button type="submit">Sign in</button>
+      </form>
+    </dialog>
 
     <script src="index.js"></script>
   </body>
