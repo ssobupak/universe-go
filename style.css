@@ -626,6 +626,9 @@ dialog[open] {
     width: 20%;
   }
 
+  .titulo-viajes-populares {
+    margin-bottom: 5px;
+  }
   .card-wrapper {
     margin-top: -30px;
     flex-direction: column;
